@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    .container {
+      text-align: left;
+    }
+    textarea {
+      display: block; /* Makes the textarea take up the full line */
+      margin-bottom: 10px; /* Adds a little space below the textarea */
+    }
+    </style>
+</head>
+<body>
+    <h1>Vice Versa</h1>
+    <div class="container">
+        <textarea id="myTextarea" rows="4" cols="50" placeholder="Write something here..."></textarea>
+        <button type="button" onclick="alert(document.getElementById('myTextarea').value)">Show Text</button>
+    </div>
+</body>
+</html>

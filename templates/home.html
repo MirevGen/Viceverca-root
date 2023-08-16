@@ -15,9 +15,10 @@
 </head>
 <body>
     <h1>Vice Versa</h1>
-    <div class="container">
-        <textarea id="myTextarea" rows="4" cols="50" placeholder="Write something here..."></textarea>
-        <button type="button" onclick="alert(document.getElementById('myTextarea').value)">Show Text</button>
-    </div>
+    <form action="{% url 'reverse' %}">
+        <textarea id="myTextarea" rows="4" cols="50" name="usertext" placeholder="Write something here..."></textarea>
+        <br><br>
+        <input type="submit" value="Reverse!">
+    </form>
 </body>
 </html>
